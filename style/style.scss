@@ -10,6 +10,7 @@
 @import "./componants/header";
 @import "./componants/responsive";
 @import "./componants/utils";
+@import "./componants/variables";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
@@ -28,6 +29,7 @@ html {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   box-sizing: inherit;
+  color: $prim-color-black;
 }
 body {
   font-size: 3rem;
