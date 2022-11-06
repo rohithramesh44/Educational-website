@@ -1,0 +1,28 @@
+.btn {
+  padding: 2rem 4rem;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  &:active,
+  &:link {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+.btn:focus {
+  outline: none;
+}
+
+h1 {
+  font-size: 6.8rem;
+  line-height: 8.2rem;
+}
+h4 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}

@@ -1,0 +1,96 @@
+@import "variables";
+
+.header {
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 33;
+  transition: opacity 0.5 ease-in-out;
+  .nav {
+    // width: 45%;
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-link.open {
+      opacity: 0;
+      pointer-events: none;
+    }
+    &-list li {
+      list-style: none;
+      font-size: 2rem;
+      text-transform: titlecase;
+    }
+    &-list li a {
+      text-decoration: none;
+      padding: 1rem 2rem;
+      color: $white-color;
+      font-weight: 500;
+      transition: color 0.2s ease;
+      &:hover {
+        color: $prim-color;
+      }
+    }
+    .menu-bar {
+      width: 3rem;
+      height: 3rem;
+      margin-left: 2rem;
+      cursor: pointer;
+    }
+
+    &-list .menu-bar span {
+      display: inline-block;
+      width: 3rem;
+      height: 4px;
+      background-color: $white-color;
+      position: relative;
+      -webkit-transition: all 0.5s ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        transform: translateY(-1rem);
+        width: 3rem;
+        height: 4px;
+        background-color: $white-color;
+        -webkit-transition: all 0.5s ease;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        transform: translateY(1rem);
+        width: 3rem;
+        height: 4px;
+        background-color: $white-color;
+        -webkit-transition: all 0.5s ease;
+      }
+    }
+  }
+}
+.nav-list .menu-bar.open span {
+  background-color: $prim-color-black;
+
+  &::before {
+    background-color: $prim-color-black;
+    width: 60%;
+  }
+  &::after {
+    background-color: $prim-color-black;
+    width: 60%;
+  }
+}
+
+.logo {
+  width: 12rem;
+  fill: $white-color;
+}
+
+// -webkit-transition: opacity 1.2s ease;
+// -moz-transition: opacity 1.2s ease;
+// -ms-transition: opacity 1.2s ease;
+// -o-transition: opacity 1.2s ease;
+// transition:  opacity 1.2s ease-out;

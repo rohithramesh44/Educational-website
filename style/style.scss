@@ -1,0 +1,47 @@
+@import "./componants/article";
+@import "./componants/banner";
+@import "./componants/course";
+@import "./componants/footer";
+@import "./componants/gallery";
+@import "./componants/message";
+@import "./componants/newsEvents";
+@import "./componants/numbers";
+@import "./componants/variables";
+@import "./componants/header";
+@import "./componants/responsive";
+@import "./componants/utils";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  box-sizing: inherit;
+}
+body {
+  font-size: 3rem;
+}
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  display: grid;
+  grid-template-rows: 100vh repeat(2, min-content) 40vw repeat(4, min-content);
+  grid-template-columns:
+    [full-start] minmax(3rem, 1fr) [center-start]
+    repeat(8, [col-start] minmax(min-content, 165px) [col-end])
+    [center-end] minmax(3rem, 1fr) [full-end];
+}
