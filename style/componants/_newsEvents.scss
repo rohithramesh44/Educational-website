@@ -44,7 +44,7 @@
     display: grid;
     grid-row-gap: 1rem;
 
-    padding: 2rem 1rem 0;
+    padding: 4rem 3rem 1rem 3rem;
 
     h4 {
       margin: 2rem 0;
@@ -67,12 +67,15 @@
     h5 {
       grid-column: 2/ 3;
       grid-row: 1/ 2;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: 500;
+      transform: translateY(-6px);
     }
+
     p {
       grid-column: 2/ 3;
       grid-row: 2 / span 2;
+      font-size: 1.4rem;
     }
   }
 }

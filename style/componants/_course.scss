@@ -2,4 +2,24 @@
   grid-column: center-start/ center-end;
   grid-row: 3 / 4;
   background-color: red !important;
+  overflow: hidden;
+}
+
+.online-courses {
+  padding: 5rem 0;
+
+  .course-boxes {
+    margin-top: 4rem;
+    background-color: green;
+    display: flex;
+    gap: 2rem;
+  }
+  .course-box {
+    min-width: calc(25% - 1rem);
+    background-color: yellow;
+
+    img {
+      width: 100%;
+    }
+  }
 }
